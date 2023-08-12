@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Data Casting</title>
+    </head>
+    <body>
+        <script>
+            let yas = "56";
+            console.log(yas, typeof yas);
+
+            yas = Number(yas);
+            console.log(yas, typeof yas);
+
+            const string1 = "50";
+            const string3 = null; // undefined, NaN
+            console.log(string1 + string3);
+            // NaN = Not a Number (sayi degil);
+            console.log(typeof NaN);
+            /* 
+let age=prompt("Yasinizi giriniz") 
+
+console.log(age,typeof(age) ) 
+
+//prompttan gelen degerler String olarak gelir
+age=Number(age)
+console.log(age,typeof(age) )
+*/
+
+            let kdv = "20";
+            kdv = parseInt(kdv);
+            console.log(kdv, typeof kdv);
+
+            //parseFloat() ondalikli sayiya cevirmek icin kullanilir
+
+            let otv = "20ABC";
+            otv = parseInt(otv);
+            console.log(otv);
+
+            //bu islemin sonucunda js hata vermez isleminn sonucunu Infinity olarak verir
+            let mtv = 5 / 0;
+            console.log(mtv);
+
+            let z = 30;
+            console.log(z, typeof z);
+
+            z = String(z);
+            console.log(z, typeof z);
+
+            let y = 45;
+            console.log(y, typeof y);
+
+            y = y.toString();
+            console.log(y, typeof y);
+
+            var binaryStr = 12;
+            var binaryStr = binaryStr.toString(2);
+            console.log(binaryStr);
+
+            var hex = 12;
+            var hex = hex.toString(16);
+            console.log(hex);
+        </script>
+    </body>
+</html>
