@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>INCEREMENT — DECREMENT — MODUL</title>
+    </head>
+    <body>
+        <h1>INCEREMENT — DECREMENT — MODUL</h1>
+
+        <script>
+            // increment
+            // a = a + 1
+            // a += 1
+            // a++
+            // ++a
+
+            // decrement
+            // a = a - 1
+            // a -= 1
+            // a--
+            // --a
+
+            // create a variable
+            let a = 3;
+            // increment a variable, then assign it to b variable
+            // a = a + 1;
+            // b = a;
+            let b = ++a; // b = (a = a + 1)
+            console.log(a, b);
+            // decrement a variable, then assign it to c variable
+            let c = --a; // c = (a = a - 1)
+            console.log(a, b, c);
+
+            a = a + 5; // a = a + 5
+            console.log(a);
+
+            // k = z;
+            // z = z + 1;
+
+            let z = 3;
+            let k = z++;
+            console.log(z, k);
+
+            let num1 = 123;
+            console.log(`Birler Basamagi: ${num1 % 10}`);
+            console.log(num1++);
+            // console.log(num1); num1 = num1 + 1;
+            console.log(num1);
+
+            let odd = 5; // tek sayi
+            let even = 6; // cift sayi
+
+            console.log(odd % 2);
+            console.log(even % 2);
+        </script>
+    </body>
+</html>

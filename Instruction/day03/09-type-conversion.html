@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TYPE CONVERSION</title>
+    </head>
+    <body>
+        <h1>TYPE CONVERSION</h1>
+
+        <script>
+            const string1 = "50";
+            const string2 = NaN;
+            console.log(string1 + string2); // 50NaN
+
+            console.log(typeof NaN); // number
+
+            const sayi1 = Number(string1) + 15;
+
+            console.log(sayi1.toString());
+            console.log(String(sayi1));
+
+            const sayi2 = +string1 + 15;
+            console.log(typeof string1);
+            console.log(typeof sayi2);
+
+            console.log(Number(string1));
+
+            const string3 = "";
+            console.log(Number(string3));
+
+            const string4 = 50 / 0;
+            console.log(typeof string4);
+
+            const s1 = 5;
+            const s2 = -7;
+            const name = "John";
+            console.log(Boolean(s1)); // true
+            console.log(Boolean(s2)); // true
+            console.log(Boolean(name)); // true
+
+            const s3 = 500 / 0;
+
+            const s4 = "undefined";
+
+            // falsy values
+            // 0, null, undefined, NaN, ""
+            console.log(Boolean(s3)); // true
+            console.log(s3); // Infinity
+
+            console.log(Boolean(0)); // false
+            console.log(Boolean(s4)); // true
+        </script>
+    </body>
+</html>

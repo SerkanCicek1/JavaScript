@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>STRING LITERALS (TEMPLATE LITERALS)</title>
+    </head>
+    <body>
+        <h1>STRING LITERALS (TEMPLATE LITERALS)</h1>
+
+        <script>
+            const salary = "30000";
+            const name = "John";
+            const company = "TECHPRO";
+
+            const message =
+                "Hello " +
+                name +
+                ", your salary is " +
+                salary +
+                " at " +
+                company +
+                ".";
+            console.log(message);
+            const message1 = `Hello ${name}, your salary is ${salary} at ${company}.`;
+            console.log(message1);
+
+            const paragraph = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta saepe voluptas eius delectus, doloremque odit odio? 
+            Quasi quo non, vero dolore impedit nostrum exercitationem esse, facere debitis voluptatibus quae voluptates.`;
+
+            console.log(paragraph);
+
+            let html = "<div class='card'>";
+            html = html + "<div class='card-body'>Hello</div>";
+            html = html + "</div>";
+            document.write(html);
+
+            let html1 = `
+            <div class='card'>
+                <div class='card-body'>Hello</div>
+            </div>`;
+
+            document.write(html1);
+        </script>
+    </body>
+</html>
