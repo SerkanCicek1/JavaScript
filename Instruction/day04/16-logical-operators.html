@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOGICAL OPERATORS</title>
+    </head>
+    <body>
+        <h1>LOGICAL OPERATORS</h1>
+
+        <script>
+            const sayi1 = 50;
+            const sayi2 = 40;
+
+            console.log(sayi1 && sayi2);
+            // console.log(Boolean(sayi1) && Boolean(sayi2));
+            // && operatoru false degeri bulana kadar aramaya devam eder.
+            // false degeri bulunamazsa, en son true degere sahip olan degiskenin degerini dondurur.
+            // sayi2'nin degeri 40
+
+            const A = 15;
+            const B = 13;
+            console.log(A && B);
+            // console.log(Boolean(A) && Boolean(B));
+            // true && true;
+            // 13
+
+            console.log(A || B);
+            // console.log(Boolean(A) || Boolean(B));
+            // true || true;
+            // 15
+
+            const C = 1;
+            const D = 0;
+            console.log(C && D);
+            // console.log(Boolean(C) && Boolean(D));
+            // true && false;
+            // 0
+
+            console.log(C || D);
+            // console.log(Boolean(C) || Boolean(D));
+            // true || false;
+            // 1
+
+            const E = 0;
+            const F = 1;
+
+            console.log(E && F);
+            // console.log(Boolean(E) && Boolean(F));
+            // false && true;
+            // 0
+
+            console.log(E || F);
+            // console.log(Boolean(E) || Boolean(F));
+            // false || true;
+            // 1
+
+            const G = null;
+            const H = undefined;
+            console.log(G && H);
+            // console.log(Boolean(G) && Boolean(H));
+            // false && false;
+            // null
+
+            console.log(G || H);
+            // console.log(Boolean(G) || Boolean(H));
+            // false || false;
+            // undefined
+
+            console.log(!G);
+            // console.log(!Boolean(G));
+            // !false;
+            // true
+
+            let s2 = true;
+            let s3 = true;
+            console.log(s2 && true); // true
+            console.log(s2 && s3); // true
+            console.log(s2 && s3 && false); // false
+
+            s3 = false;
+            console.log(s2 || s3 || false); // true
+            console.log(s3 || (s2 && s3)); // false
+
+            s3 = null;
+            console.log(s2 && s3); // null
+            console.log(s2 || s3); // true
+
+            const not1 = 50;
+            const not2 = 60;
+            const not3 = 70;
+
+
+        </script>
+    </body>
+</html>

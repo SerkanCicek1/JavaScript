@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>REFERENCE VS PRIMITIVE</title>
+    </head>
+    <body>
+        <h1>REFERENCE VS PRIMITIVE</h1>
+
+        <script>
+            // PRIMITIVE
+
+            let x = 5;
+            let y = x;
+            let z = 5;
+
+            5 === 5; // true
+            jkfdgnkdfjng == 93875934579348
+
+            console.log(x === y); // true
+            console.log(x === z); // true
+
+            let name1 = "John";
+            let name2 = name1;
+
+            console.log(name1 === name2); // true
+
+            name2 = "Jane";
+            console.log(name1 === name2); // false
+
+            // REFERENCE
+
+            let computer1 = {
+                cpu: "Intel", // 658658568568
+                ram: 16, // jkhkhjkhjk
+                disk: 512, // sdfgj
+            };
+
+            let computer2 = {
+                cpu: "Intel", // kjdgjdfjgkdjkfgkd
+                ram: 16, // 123456789dsfsd
+                disk: 512, // 123456789fg
+            };
+
+            let computer3 = computer1;
+
+            console.log(computer1 === computer2); // false
+            console.log(computer1 === computer3); // true
+
+            computer3.cpu = "AMD";
+            console.log(computer1);
+            console.log(computer3);
+
+            computer1.cpu = "Intel";
+            console.log(computer1);
+            console.log(computer3);
+
+            let bosObje = {};
+            let digerBosObje = {};
+
+            let ucuncuBosObje = bosObje;
+
+            console.log(bosObje === digerBosObje); // false
+            console.log(ucuncuBosObje === bosObje); // true
+
+            console.log(typeof null); // object
+            const null1 = null;
+            const null2 = null;
+            console.log(null1 === null2); // true
+
+        </script>
+    </body>
+</html>
