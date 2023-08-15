@@ -1,0 +1,14 @@
+.title {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.bg-primary {
+    background-color: blue;
+}
+
+.text-center {
+    text-align: center;
+}
