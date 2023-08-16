@@ -1,0 +1,28 @@
+.toggle-btn {
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(0, 0, 0, 0.805);
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark .toggle-btn {
+    background-color: white;
+    color: black;
+}
