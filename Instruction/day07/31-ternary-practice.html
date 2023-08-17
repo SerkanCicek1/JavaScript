@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TERNARY PRACTICE</title>
+    </head>
+    <body>
+        <h1>TERNARY PRACTICE</h1>
+
+        <input
+            type="number"
+            placeholder="Lutfen maasinizi giriniz..."
+            id="salary"
+            oninput="setSalary()" />
+        <br />
+        <input
+            type="radio"
+            name="status"
+            id="retired"
+            oninput="setSalary()"
+            value="retired" />
+        <label for="retired">Emekli</label>
+        <input
+            type="radio"
+            name="status"
+            id="employee"
+            oninput="setSalary()"
+            value="employee" />
+        <label for="employee">Calisan</label>
+
+        <p id="result"></p>
+
+        <script src="./js/31-ternary-practice.js"></script>
+    </body>
+</html>
