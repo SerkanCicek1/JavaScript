@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+            integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <title>FOR LOOP PRACTICE</title>
+    </head>
+    <body>
+        <h1>FOR LOOP PRACTICE</h1>
+        <h2 class="display-1">PRODUCTS</h2>
+        <form>
+            <div class="input-group input-group-lg" style="max-width: 500px">
+                <span class="input-group-text">%</span>
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="DISCOUNT RATE..."
+                    id="discount" />
+                <button class="btn btn-danger" type="button" onclick="setPrices()">APPLY</button>
+            </div>
+        </form>
+
+        <ul class="list-group" id="productList" style="max-width: 500px">
+            <li
+                class="list-group-item d-flex align-items-center justify-content-between">
+                Notebook
+                <span class="badge bg-primary rounded-pill"
+                    >$<em>1500</em>
+                </span>
+            </li>
+            <li
+                class="list-group-item d-flex align-items-center justify-content-between">
+                Monitor
+                <span class="badge bg-primary rounded-pill"
+                    >$<em>500</em>
+                </span>
+            </li>
+            <li
+                class="list-group-item d-flex align-items-center justify-content-between">
+                Keyboard
+                <span class="badge bg-primary rounded-pill"
+                    >$<em>50</em>
+                </span>
+            </li>
+            <li
+                class="list-group-item d-flex align-items-center justify-content-between">
+                Mouse
+                <span class="badge bg-primary rounded-pill"
+                    >$<em>80</em>
+                </span>
+            </li>
+        </ul>
+
+        <script src="./js/37-for-loop-practice.js"></script>
+    </body>
+</html>
